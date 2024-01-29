@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Sensors"
+        android:layout_gravity="" />
+
+    <LinearLayout
+        android:id="@+id/sensorsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="2dp"
+        android:layout_gravity="center_horizontal"
+        android:theme="@style/AppTheme"   >
+
+        <!-- Checkboxes for each sensor will be added here dynamically -->
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/showSelectedSensorsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:onClick="showSelectedSensors"
+        android:text="Show Selected Sensors" />
+
+</androidx.wear.widget.BoxInsetLayout>
